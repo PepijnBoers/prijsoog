@@ -1,7 +1,7 @@
 .. raw:: html
 
    <p align="center">
-   <img height="200px" src="assets/prijsoog.png">
+   <img height="200px" src="https://raw.githubusercontent.com/PepijnBoers/prijsoog/master/assets/prijsoog.png">
    </p>
 
 
