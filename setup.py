@@ -10,8 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-with open('requirements_dev.txt') as requirements_file:
-    requirements = [req.split('==')[0] for req in requirements_file.readlines()]
+requirements = ["pytest", "requests", "beautifulsoup4"]
 
 test_requirements = [ ]
 
