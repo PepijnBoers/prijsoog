@@ -12,7 +12,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ["pytest", "requests", "beautifulsoup4"]
 
-test_requirements = [ ]
+test_requirements = ["pytest", "requests", "beautifulsoup4"]
 
 setup(
     author="Pepijn Boers",
