@@ -10,9 +10,9 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ["pytest", "requests", "beautifulsoup4", "pytest-cov"]
+requirements = ["pytest", "requests", "beautifulsoup4", "pytest-cov", "wheel"]
 
-test_requirements = ["pytest", "requests", "beautifulsoup4", "pytest-cov"]
+test_requirements = ["pytest", "requests", "beautifulsoup4", "pytest-cov", "wheel"]
 
 setup(
     author="Pepijn Boers",
