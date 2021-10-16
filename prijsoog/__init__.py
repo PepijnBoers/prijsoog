@@ -3,5 +3,5 @@ from prijsoog.supermarkets.jumbo import JumboWatcher
 
 __author__ = """Pepijn Boers"""
 __email__ = "pepijnbb@gmail.com"
-__version__ = "__version__ = '0.1.4'"
+__version__ = "__version__ = '0.1.5'"
 __all__ = ["AhWatcher", "JumboWatcher"]
