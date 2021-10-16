@@ -6,13 +6,23 @@ from datetime import datetime
 
 
 CUSTOM_HEADER = {
-    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "User-Agent": (
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Maci"
+        " OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+        " Version/13.0.3 Mobile/15E148 Safari/604.1"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8,application"
+        "/signed-exchange;v=b3;q=0.9"
+    ),
 }
 
 
 class PriceWatcher:
-    """Main class that enables product & price retrieval of Dutch supermarkets"""
+    """
+    Main class that enables product & price retrieval of Dutch supermarkets
+    """
 
     def __init__(self, min_delay=5):
         """Class constructor

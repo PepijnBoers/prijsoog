@@ -15,3 +15,4 @@ deploy:
     tags: true
     repo: PepijnBoers/prijsoog
     python: 3.8
+  skip_cleanup: true

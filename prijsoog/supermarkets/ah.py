@@ -2,6 +2,7 @@ from prijsoog._base import PriceWatcher
 from datetime import datetime
 import time
 
+
 class AhWatcher(PriceWatcher):
     """Albert Heijn price watcher."""
 
@@ -35,5 +36,6 @@ class AhWatcher(PriceWatcher):
     def _price_filter(self, prices):
         """Combine AH price elements '2', '.', '99' into '2.99'"""
         cleaned_prices = [price.contents[0] for price in prices]
-        combined = [cleaned_prices[i : i + 3] for i in range(0, len(cleaned_prices), 3)]
+        price_len = len(cleaned_prices)
+        combined = [cleaned_prices[i:i+3] for i in range(0, price_len, 3)]
         return [float("".join(price)) for price in combined]

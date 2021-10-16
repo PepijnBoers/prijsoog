@@ -2,6 +2,7 @@ from prijsoog._base import PriceWatcher
 from datetime import datetime
 import time
 
+
 class JumboWatcher(PriceWatcher):
     """Jumbo price watcher."""
 
@@ -18,7 +19,8 @@ class JumboWatcher(PriceWatcher):
         if current_interval.seconds < self.min_delay:
             time.sleep(self.min_delay - current_interval.seconds)
 
-        soup = super().make_request(f"https://www.jumbo.com/zoeken?searchTerms={query}")
+        url = f"https://www.jumbo.com/zoeken?searchTerms={query}"
+        soup = super().make_request(url)
 
         # Css selector
         name_css = ".title-link"
@@ -31,7 +33,6 @@ class JumboWatcher(PriceWatcher):
         }
 
         return dict(zip(*selection.values()))
-
 
     def _price_filter(self, prices):
         """Combine Jumbo price elements '2', ',', '99' into '2.99'"""
