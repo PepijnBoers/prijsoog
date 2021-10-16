@@ -1,9 +1,7 @@
-.. raw:: html
-
-   <p align="center">
-   <img height="200px" src="https://raw.githubusercontent.com/PepijnBoers/prijsoog/master/assets/prijsoog.png">
-   </p>
-
+.. image:: https://raw.githubusercontent.com/PepijnBoers/prijsoog/master/assets/prijsoog.png
+   :target: https://raw.githubusercontent.com/PepijnBoers/prijsoog/master/assets/prijsoog.png 
+   :align: center
+   :height: 200px
 
 ========
 Prijsoog
